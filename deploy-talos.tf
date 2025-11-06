@@ -13,6 +13,8 @@ module "talos" {
         "test-worker-1" = "alpha"
         "test-worker-2" = "alpha"
         "test-worker-3" = "alpha"
+        "test-worker-4" = "alpha"
+        "test-worker-5" = "alpha"
     }
 
     proxmox_iso_datastore = "ISOTEMP"
