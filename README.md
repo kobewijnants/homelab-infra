@@ -83,7 +83,7 @@ kubectl port-forward svc/argocd-server -n argocd 8080:443
 To destroy the entire cluster:
 
 ```bash
-terraform destroy -parallelism=2
+terraform destroy
 ```
 
 You'll be prompted for your Proxmox root password. This will remove all VMs and associated resources.
