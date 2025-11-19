@@ -1,4 +1,4 @@
-# Kubernetes on Proxmox using Terraform
+# Homalab Infrastructure
 
 Automated deployment of a production-ready Kubernetes cluster on [Proxmox VE](https://proxmox.com/en/) using [Talos Linux](https://www.talos.dev/) and [Terraform](https://developer.hashicorp.com/terraform).
 
