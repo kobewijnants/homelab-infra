@@ -64,6 +64,20 @@ kubectl get nodes
 
 If nothing shows up the cluster is still configuring.
 
+### 5. Access ArgoCD
+
+Before logging into ArgoCD, retrieve the initial admin password:
+
+```bash
+kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d
+```
+
+Then port forward the ArgoCD server to access the web UI:
+
+```bash
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+```
+
 ## Cleanup
 
 To destroy the entire cluster:

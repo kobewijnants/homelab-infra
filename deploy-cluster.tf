@@ -34,5 +34,4 @@ module "talos" {
 
   talos_arch         = "amd64"
   talos_schematic_id = "ce4c980550dd2ab1b17bbf2b08801c7eb59418eafe8f279833297925d67c7515"
-
 }
