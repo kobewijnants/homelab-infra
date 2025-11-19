@@ -39,7 +39,7 @@ Update [`provider.tf`](provider.tf) to match your Proxmox endpoint.
 ### 3. Deploy the Cluster
 
 ```bash
-./deploy.sh
+terraform apply -parallelism=2
 ```
 
 You'll be prompted for your Proxmox root password. The deployment takes approximately 10-15 minutes.
@@ -69,7 +69,7 @@ If nothing shows up the cluster is still configuring.
 To destroy the entire cluster:
 
 ```bash
-./destroy.sh
+terraform destroy -parallelism=2
 ```
 
 You'll be prompted for your Proxmox root password. This will remove all VMs and associated resources.
